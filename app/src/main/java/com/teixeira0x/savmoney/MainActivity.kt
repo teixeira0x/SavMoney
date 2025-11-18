@@ -11,6 +11,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.teixeira0x.savmoney.ui.screen.home.HomeScreen
+import com.teixeira0x.savmoney.ui.screen.home.screen.addexpense.AddExpenseScreen
 import com.teixeira0x.savmoney.ui.theme.SavMoneyTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -30,7 +31,10 @@ class MainActivity : ComponentActivity() {
     fun AppNavHost(navController: NavHostController) {
         NavHost(navController = navController, startDestination = "home") {
             composable("home") {
-                HomeScreen()
+                HomeScreen(navController)
+            }
+            composable("add_expense") {
+                AddExpenseScreen(navController)
             }
         }
     }
