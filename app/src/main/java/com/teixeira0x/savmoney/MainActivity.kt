@@ -11,7 +11,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.teixeira0x.savmoney.ui.screen.home.HomeScreen
-import com.teixeira0x.savmoney.ui.screen.home.screen.addexpense.AddExpenseScreen
+import com.teixeira0x.savmoney.ui.screen.addexpense.AddExpenseScreen
 import com.teixeira0x.savmoney.ui.theme.SavMoneyTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
